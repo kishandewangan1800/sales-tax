@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.container {
+  width: 70%;
+  height: 100%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-fluid {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.form {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+h1 {
+  color: indigo;
+  margin: 20px 0;
+}
+
+#input {
+  width: 100%;
+  max-width: 650px;
+  min-width: 350px;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+input:focus {
+  outline: 1px solid indigo;
+  font-weight: 400;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: indigo;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+  color: white;
+}
+
+#bill {
+  display: none;
+  justify-content: flex-start;
+}
+
+.output,
+.display {
+  font-size: 18px;
+  margin: 5px;
+  line-height: 20px;
+}
+
+.formate {
+  color: gray;
+  margin: 10px 0;
+}
+
+@media screen and (max-width:500px) {
+    .form {
+        flex-direction: column;
+      }
+
+      #input{
+        margin: 10px 0;
+      }
+
+      button{
+        margin: 5px 0;
+      }
+}
